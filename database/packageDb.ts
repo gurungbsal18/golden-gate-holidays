@@ -130,3 +130,36 @@ export const aboutusSectionFeatureData = [
     title: "More Than 300 Trips",
   },
 ];
+
+export const departureDateData = [
+  {
+    id: 1,
+    date: "2025-01-01 - 2025-01-15",
+    tripName: "Everest Base Camp Trek - 13 Days",
+    price: 1499,
+  },
+  {
+    id: 2,
+    date: "2025-02-15 - 2025-02-25",
+    tripName: "Annapurna Base Camp Trek - 11 Days",
+    price: 800,
+  },
+  {
+    id: 3,
+    date: "2025-03-10 - 2025-03-20",
+    tripName: "Mardi Himal Trek - 7 Days",
+    price: 500,
+  },
+  {
+    id: 4,
+    date: "2025-04-20 - 2025-04-30",
+    tripName: "Langtang Valley Trek - 7 Days",
+    price: 1200,
+  },
+  {
+    id: 5,
+    date: "2025-05-01 - 2025-05-10",
+    tripName: "Annapurna Circuit Trek - 15 Days",
+    price: 1500,
+  },
+];
