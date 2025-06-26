@@ -4,7 +4,7 @@ import { aboutusSectionFeatureData } from "@/database/packageDb";
 
 const AboutSection = () => {
   return (
-    <div className="py-48 homepage-about-section">
+    <div className="pt-32 pb-48 homepage-about-section">
       <div className="container grid lg:grid-cols-2 gap-16 items-center ">
         <span className="col-span-1">
           <Image
@@ -19,7 +19,7 @@ const AboutSection = () => {
           <h4 className="title text-white text-center lg:text-left">
             About us
           </h4>
-          <p className="text-white">
+          <p className="text-white text-center lg:text-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed
             quam mattis, malesuada nulla at, vulputate nisi. Integer iaculis
             dictum risus eu viverra. Nulla diam nisi, tincidunt nec sapien nec,
@@ -33,7 +33,12 @@ const AboutSection = () => {
             tincidunt sit amet.
           </p>
           <div>
-            <Button color="warning" size="lg" radius="sm">
+            <Button
+              color="warning"
+              size="lg"
+              radius="sm"
+              className="w-full lg:w-auto"
+            >
               Read more
             </Button>
           </div>
