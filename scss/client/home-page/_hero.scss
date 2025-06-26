@@ -1,0 +1,82 @@
+@use "../../global" as *;
+
+.topbar-icon {
+  width: 24px;
+  height: 24px;
+  background-color: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  svg {
+    width: 14px;
+    height: 14px;
+    color: $white;
+  }
+}
+
+.hero {
+  position: relative;
+  background-image: url("../../../public/Images/Ghorepani.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -2;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  background-image: url("../../../public/home_banner_wave.svg");
+  z-index: 1;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-play-btn {
+  background-color: $white;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  svg {
+    color: $primary;
+    font-size: 24px;
+    margin-left: 6px;
+  }
+}
+
+.hero-search-container {
+  background-color: #ffffffa2;
+  width: 80%;
+  .search-btn {
+    width: 350px;
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
+}
