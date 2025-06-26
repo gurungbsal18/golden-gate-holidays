@@ -8,7 +8,7 @@ const TopPickPackageSection = () => {
   const title = "Top Picks";
   const subtitle = "Join us for an unforgettable adventure in this year!";
   return (
-    <div className="container py-48">
+    <div className="container pt-48 pb-24">
       <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-2 ">
         <div>
           <h2 className="title text-primary">{title}</h2>
